@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { customPartials, pageLoader, Styleguider } from 'styleguider'
-
-import Button from './Button'
+import { useCustomPartials, pageLoader, Styleguider } from 'styleguider'
 
 import logo from './assets/logo.png'
-
-const Logo = () => <div>logo2</div>
+import Logo from './partials/Logo'
+import Button from './react/Button'
 
 const sections = [
   {
@@ -35,8 +33,8 @@ const sections = [
 
 const components = { Button }
 
-const partials = customPartials({
-  // logo: Logo,
+const partials = useCustomPartials({
+  logo: Logo,
 })
 
 ReactDOM.render(
