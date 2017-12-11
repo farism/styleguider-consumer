@@ -3,3 +3,18 @@
   box-sizing: border-box;
   height: 120px;
 }
+
+.menu-link {
+  color: #4d4d4d;
+  font-size: 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+  width: 16px;
+}
